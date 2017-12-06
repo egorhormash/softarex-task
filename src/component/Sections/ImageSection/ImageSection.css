@@ -1,0 +1,28 @@
+.image-section {
+    height: 558px;
+    width: 742px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.12);
+    z-index: 1;
+}
+.image-preview-window {
+    margin-left: 15px;
+    margin-top: 17px;
+    width: 712px;
+    height: 480px;
+}
+.image-preview-window img {
+    cursor: pointer;
+    max-width: 712px;
+    max-height: 522px;
+}
+.tag {
+    position: absolute;
+    width: 24px;
+    height: 27px;
+    background: url("../../../static/images/note.png") no-repeat;
+    cursor: pointer;
+
+}
+.tag-active {
+    background: url("../../../static/images/note-active.png") no-repeat;
+}

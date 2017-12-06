@@ -1,0 +1,55 @@
+.navigation {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to bottom, #2A3E52 0%,#243342 100%);
+    width: 60px;
+    height: 638px;
+    border-top: 1px solid #172431;
+    border-right: 1px solid #172431;
+    box-sizing: border-box;
+    box-shadow: 0 1px 0 rgba(103, 126, 145, 0.38) inset;
+
+}
+.nav-home {
+    padding-top: 25px;
+    padding-bottom: 14px;
+    padding-left: 15px;
+}
+.nav-messages {
+    padding-top: 19px;
+    padding-bottom: 13px;
+    padding-left: 15px;
+}
+.nav-gallery {
+    padding-top: 16px;
+    padding-bottom: 15px;
+    padding-left: 14px;
+}
+.msg-notification {
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    box-sizing: border-box;
+    margin-top: -54px;
+    margin-left: 27px;
+    padding-top: 3px;
+    font-size: 12px;
+    background-color: #f3393f;
+    border: 3px solid #2a3b4c;
+    border-radius: 50%;
+    font-family: "Roboto Bold", sans-serif;
+    text-align: center;
+    color: #FFFFFF;
+}
+.nav-is-active {
+    background: linear-gradient( #0F1720 0%, #0F222D 100%);
+    width: 58px;
+    box-shadow: 1px 2px 0 0 #000000 inset;
+    border-top: 1px solid #0D202B;
+    border-right: 1px solid #0D202B;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: "Roboto Bold";
+    src: url("../../static/fonts/RobotoBold.ttf") format("truetype");
+}
