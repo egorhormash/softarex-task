@@ -3,18 +3,6 @@ import './NotesSection.scss';
 import noteTag from '../../../source/images/note-tag.png'
 
 class NotesSection extends PureComponent {
-    notesToggle = () => {
-       return   <div className='notes-toggle'>
-                    <input className='radio' type='radio' id='note-choice-latest'
-                           name='note' defaultChecked={true}/>
-                    <label htmlFor='note-choice-latest' className='note-choice-label'>Latest</label>
-                    <input className='radio' type='radio' id='note-choice-all'
-                           name='note'/>
-                    <label htmlFor='note-choice-all' className='note-choice-label'>All</label>
-       </div>
-
-    };
-
     renderNotes = () => {
         return this.props.tags.map((tag, index) =>  (
             <div className={tag.isActive ? 'note note-active' : 'note'} key={index}
@@ -28,10 +16,16 @@ class NotesSection extends PureComponent {
     };
 
     render() {
-
         return (
             <section  className='notes-section' id= 'notes-list'>
-                {this.notesToggle()}
+                <div className='notes-toggle'>
+                    <input className='radio' type='radio' id='note-choice-latest'
+                           name='note' defaultChecked={true}/>
+                    <label htmlFor='note-choice-latest' className='note-choice-label'>Latest</label>
+                    <input className='radio' type='radio' id='note-choice-all'
+                           name='note'/>
+                    <label htmlFor='note-choice-all' className='note-choice-label'>All</label>
+                </div>
                 <div className={'notes-list'} >
                 {this.renderNotes()}
                 </div>
