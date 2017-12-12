@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import './NotesSection.scss';
 import noteTag from '../../../source/images/note-tag.png'
 
-class NotesSection extends Component {
+class NotesSection extends PureComponent {
     notesToggle = () => {
        return   <div className='notes-toggle'>
                     <input className='radio' type='radio' id='note-choice-latest'

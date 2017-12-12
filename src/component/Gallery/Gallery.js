@@ -20,28 +20,24 @@ class Gallery extends Component {
     };
 
     addTag = (tag) => {
-        const currentTagList = this.state.tags;
-
-        currentTagList.map(tag => {
-           tag.isActive = false;
+        this.state.tags.map(tag => {
+            tag.isActive = false;
         });
-
-        currentTagList.push(tag);
-        this.setState({
-            tags: currentTagList
-        })
+        this.setState(prevState => ({
+            tags: [...prevState.tags, tag],
+        }));
     };
 
     setHighlightedTag = (coordinates) => {
-        const currentTagList = this.state.tags;
-        currentTagList.map(tag => {
+        this.state.tags.map(tag => {
             tag.xCoordinate === coordinates.xCoordinate && tag.yCoordinate === coordinates.yCoordinate ?
                 tag.isActive = true : tag.isActive = false
         });
-        this.setState({
-            tags: currentTagList
-        })
+        this.setState(prevState => ({
+            tags: prevState.tags.splice().concat(this.state.tags)
+        }));
     };
+
     onUpdateImage = () => {
         this.setState({
             tags:[]

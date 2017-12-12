@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import './LoginField.scss';
 import loginIcon from '../../../source/images/login-icon.svg';
 
-class LoginField extends Component {
+class LoginField extends PureComponent {
     render() {
         return (
                 <div className='login'>

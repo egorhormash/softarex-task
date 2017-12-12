@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import './UnderConstructionPage.scss'
 import toolsIcon from '../../source/images/tools.svg'
 
-class UnderConstruction extends Component {
+class UnderConstruction extends PureComponent {
     render() {
         return (
             <div className='under-construction-block'>
