@@ -52,7 +52,7 @@ const webpackConfig = {
                 use: [{
                     loader: 'url-loader',
                     query: {
-                        name: '/static/fonts/[name].[ext]',
+                        name: '/source/fonts/[name].[ext]',
                     },
                 }],
             },

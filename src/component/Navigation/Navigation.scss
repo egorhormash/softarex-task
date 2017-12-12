@@ -1,0 +1,56 @@
+@import "../../source/styles/variables";
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    background: $main-gradient;
+    border-top: $border-style;
+    border-right: $border-style;
+    box-shadow: $shadow;
+    .nav {
+        &-home {
+            padding-top: 25px;
+            padding-bottom: 14px;
+            padding-left: 15px;
+        }
+        &-messages {
+            padding-top: 19px;
+            padding-bottom: 13px;
+            padding-left: 15px;
+        }
+        &-gallery {
+            padding-top: 16px;
+            padding-bottom: 15px;
+            padding-left: 14px;
+        }
+        &-is-active {
+            background: linear-gradient( #0F1720 0%, #0F222D 100%);
+            width: 58px;
+            box-shadow: 1px 2px 0 0 #000000 inset;
+            border-top: $active-nav-border;
+            border-right: $active-nav-border;
+            box-sizing: border-box;
+        }
+    }
+    .msg-notification {
+        position: absolute;
+        height: 25px;
+        width: 25px;
+        box-sizing: border-box;
+        margin-top: -54px;
+        margin-left: 27px;
+        padding-top: 3px;
+        font-size: 12px;
+        background-color: #f3393f;
+        border: 3px solid #2a3b4c;
+        border-radius: 50%;
+        font-family: "Roboto Bold", sans-serif;
+        text-align: center;
+        color: #FFFFFF;
+    }
+}
+
+@font-face {
+    font-family: "Roboto Bold";
+    src: url("../../source/fonts/RobotoBold.ttf") format("truetype");
+}

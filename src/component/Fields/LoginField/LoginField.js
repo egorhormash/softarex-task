@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import './LoginField.css';
-import loginIcon from '../../../static/images/login-icon.svg';
+import './LoginField.scss';
+import loginIcon from '../../../source/images/login-icon.svg';
 
 class LoginField extends Component {
     render() {

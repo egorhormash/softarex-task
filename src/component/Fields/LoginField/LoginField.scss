@@ -1,0 +1,18 @@
+@import "../../../source/styles/variables";
+.login {
+    margin-top: 24px;
+    margin-left: 111px;
+    &-btn {
+        background: linear-gradient(to bottom, #293A4D 0%, #263546 100%);
+        border: none;
+        color: $header-text-color;
+        cursor: pointer;
+        font-size: 18px;
+        font-family: "OpenSans Regular", sans-serif;
+        &-text {
+            vertical-align: 9px;
+            margin-left: 8px;
+            letter-spacing: 0.03em;
+        }
+    }
+}

@@ -1,95 +1,78 @@
 .notes-section {
-    background-color: #efefef;
-    height: 558px;
-    width: 218px;
-    overflow: scroll;
-}
-.notes-toggle {
+  background-color: #efefef;
+  height: 558px;
+  width: 218px;
+  overflow: scroll; }
+  .notes-section .notes-toggle {
     position: sticky;
     position: -webkit-sticky;
     top: 0;
     height: 44px;
     border-bottom: 1px solid #ffffff;
-    width: 218px;
-    background-color: #efefef;
-}
-.radio + label {
-    cursor: pointer;
-}
-.radio:not(checked) {
-    position: absolute;
-    opacity: 0;
-}
-.radio:not(checked) + label {
-    position: relative;
-    top: 13px;
-    padding: 0 5px 0 34px;
-}
-.radio:not(checked) + label:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 11px;
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    box-shadow: inset 0 1px 3px 0 rgba(1, 2, 2, 0.37);
-    background: #FFF;
-}
-.radio:not(checked) + label:after {
-    content: '';
-    position: absolute;
-    top: 3px;
-    left: 14px;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background: #ffd500;
-    opacity: 0;
-    transition: all .2s;
-}
-.radio:checked + label:after {
-    opacity: 1;
-}
-.note-choice-label {
-    color: #666666;
-    font-size: 12px;
-    font-family: "OpenSans Bold", sans-serif;
-    letter-spacing: 0.03em;
-}
-.notes-list{
-    cursor: pointer;
-}
-.note {
+    background-color: #efefef; }
+    .notes-section .notes-toggle .radio + label {
+      cursor: pointer;
+      position: relative;
+      top: 14px;
+      padding: 0 5px 0 34px; }
+      .notes-section .notes-toggle .radio + label:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 11px;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        box-shadow: inset 0 1px 3px 0 rgba(1, 2, 2, 0.37);
+        background: #ffffff; }
+      .notes-section .notes-toggle .radio + label:after {
+        content: "";
+        position: absolute;
+        top: 3px;
+        left: 14px;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: #ffd500;
+        opacity: 0;
+        transition: all .2s; }
+    .notes-section .notes-toggle .radio:not(checked) {
+      position: absolute;
+      opacity: 0; }
+    .notes-section .notes-toggle .radio:checked + label:after {
+      opacity: 1; }
+    .notes-section .notes-toggle .note-choice-label {
+      color: #666666;
+      font-size: 12px;
+      font-family: "OpenSans Bold", sans-serif;
+      letter-spacing: 0.03em; }
+  .notes-section .notes-list {
+    cursor: pointer; }
+  .notes-section .note {
     border-bottom: 1px solid #ffffff;
-    display: flex;
-}
+    display: flex; }
+    .notes-section .note-text {
+      margin-top: 13px;
+      line-height: 1.2;
+      color: #666666;
+      font-size: 12px;
+      font-family: "OpenSans Regular", sans-serif;
+      letter-spacing: 0.03em;
+      width: 165px;
+      padding-bottom: 16px;
+      margin-left: 9px;
+      overflow-wrap: break-word; }
+    .notes-section .note-active {
+      background-color: #ffffff;
+      width: 217px; }
+      .notes-section .note-active .note-text {
+        color: black; }
+    .notes-section .note-image {
+      margin-left: 13px;
+      margin-top: 13px; }
 
-.note-text {
-    margin-top: 13px;
-    line-height: 1.2;
-    color: #666666;
-    font-size: 12px;
-    font-family: "OpenSans Regular", sans-serif;
-    letter-spacing: 0.03em;
-    width: 165px;
-    padding-bottom: 16px;
-    margin-left: 9px;
-    overflow-wrap: break-word;
-}
-.note-active {
-    background-color: #ffffff;
-    width: 217px;
-}
-.note-active .note-text {
-    color: #333333;
-}
-.note-image {
-    margin-left: 13px;
-    margin-top: 13px;
-}
 @font-face {
-    font-family: "OpenSans Bold";
-    src: url("../../../static/fonts/OpenSansBold.ttf") format("truetype");
-}
+  font-family: "OpenSans Bold";
+  src: url("../../../source/fonts/OpenSansBold.ttf") format("truetype"); }
 
+/*# sourceMappingURL=NotesSection.css.map */

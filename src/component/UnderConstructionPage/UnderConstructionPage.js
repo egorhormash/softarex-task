@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import './UnderConstructionPage.css'
-import toolsIcon from '../../static/images/tools.svg'
+import './UnderConstructionPage.scss'
+import toolsIcon from '../../source/images/tools.svg'
 
 class UnderConstruction extends Component {
     render() {

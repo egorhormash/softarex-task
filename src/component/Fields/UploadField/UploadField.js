@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './UploadField.css';
+import './UploadField.scss';
 
 class UploadField extends Component {
 

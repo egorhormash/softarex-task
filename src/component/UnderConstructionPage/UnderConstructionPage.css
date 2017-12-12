@@ -1,18 +1,17 @@
 .under-construction-block {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 960px;
-    height: 638px;
-    background-color: #efefef;
-}
-.under-construction-block p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 960px;
+  height: 638px;
+  background-color: #efefef; }
+  .under-construction-block p {
     font-family: "OpenSans Regular", sans-serif;
     color: #666666;
-    margin-top: 5%;
-}
-.under-construction-block img {
+    margin-top: 5%; }
+  .under-construction-block img {
     height: 300px;
     width: 300px;
-    margin-top: 5%;
-}
+    margin-top: 5%; }
+
+/*# sourceMappingURL=UnderConstructionPage.css.map */

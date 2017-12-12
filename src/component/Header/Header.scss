@@ -1,0 +1,19 @@
+@import "../../source/styles/variables";
+.header {
+    display: flex;
+    height: 80px;
+    background: $main-gradient;
+    box-sizing: border-box;
+    border-top: $border-style;
+    border-bottom: $border-style;
+    box-shadow: $shadow;
+}
+
+@font-face {
+    font-family: "OpenSans Italic";
+    src: url("../../source/fonts/OpenSansItalic.ttf") format("truetype");
+}
+@font-face {
+    font-family: "OpenSans Regular";
+    src: url("../../source/fonts/OpenSansRegular.ttf") format("truetype");
+}

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import './NotesSection.css';
-import noteTag from '../../../static/images/note-tag.png'
+import './NotesSection.scss';
+import noteTag from '../../../source/images/note-tag.png'
 
 class NotesSection extends Component {
     notesToggle = () => {

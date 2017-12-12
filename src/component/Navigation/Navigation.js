@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import './Navigation.css';
-import homeIcon from '../../static/images/home-icon.svg';
-import messagesIcon from '../../static/images/messages-icon.svg';
-import galleryIcon from '../../static/images/gallery-icon.svg';
+import './Navigation.scss';
+import homeIcon from '../../source/images/home-icon.svg';
+import messagesIcon from '../../source/images/messages-icon.svg';
+import galleryIcon from '../../source/images/gallery-icon.svg';
 import { NavLink } from 'react-router-dom'
 
 class Navigation extends Component {

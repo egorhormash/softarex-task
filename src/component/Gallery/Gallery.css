@@ -1,8 +1,4 @@
-.gallery {
-    display: flex;
-    flex-direction: column;
-}
 .gallery-content {
-    display: flex;
-    flex-direction: row;
-}
+  display: flex; }
+
+/*# sourceMappingURL=Gallery.css.map */
