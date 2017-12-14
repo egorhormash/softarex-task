@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import './Navigation.scss';
 import homeIcon from '../../source/images/home-icon.svg';
 import messagesIcon from '../../source/images/messages-icon.svg';
 import galleryIcon from '../../source/images/gallery-icon.svg';
-import { NavLink } from 'react-router-dom'
+import { NavLink, withRouter } from 'react-router-dom'
 
-class Navigation extends Component {
+class Navigation extends PureComponent {
     render() {
         return (
             <nav className='navigation'>
@@ -25,4 +25,4 @@ class Navigation extends Component {
     }
 }
 
-export default Navigation;
+export default withRouter(Navigation);
